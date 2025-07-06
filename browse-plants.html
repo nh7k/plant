@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Plants - PlantGift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>PlantGift</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="browse-plants.html" class="nav-link active">Browse Plants</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bulk-order.html" class="nav-link">Bulk Order</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1>Browse Our Plant Collection</h1>
+                <p>Find the perfect green companion for yourself or as a thoughtful gift</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls" data-aos="fade-up">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Plants</option>
+                        <option value="indoor">Indoor Plants</option>
+                        <option value="outdoor">Outdoor Plants</option>
+                        <option value="succulents">Succulents</option>
+                        <option value="flowering">Flowering Plants</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Price Range:</label>
+                    <select id="price-filter">
+                        <option value="all">All Prices</option>
+                        <option value="under-25">Under $25</option>
+                        <option value="25-50">$25 - $50</option>
+                        <option value="over-50">Over $50</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="care-filter">Care Level:</label>
+                    <select id="care-filter">
+                        <option value="all">All Levels</option>
+                        <option value="easy">Easy Care</option>
+                        <option value="medium">Medium Care</option>
+                        <option value="expert">Expert Care</option>
+                    </select>
+                </div>
+                <button class="btn btn-outline" id="reset-filters">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Grid -->
+    <section class="plants-catalog">
+        <div class="container">
+            <div class="plants-grid" id="plants-grid">
+                <!-- Plant Card 1 -->
+                <div class="plant-card" data-category="succulents" data-price="24.99" data-care="easy" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g5bd18a4d8b69a60435baa40a28a2a46f7a5ae19b7ee20fc6ed4230e84a63f2526db998f52252fca4049827d4201a236a751f2427fadafc5f38d2bd4e732b3af3_1280.jpg" alt="Succulent Garden" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="btn btn-small gift-btn">
+                                <i class="fas fa-gift"></i>
+                                Send Gift
+                            </button>
+                        </div>
+                        <div class="care-badge easy">Easy Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Succulent Garden</h3>
+                        <p>Perfect for beginners and busy lifestyles</p>
+                        <div class="plant-details">
+                            <span class="category">Succulents</span>
+                            <span class="light-requirement">☀️ Bright Light</span>
+                        </div>
+                        <div class="price">$24.99</div>
+                    </div>
+                </div>
+
+                <!-- Plant Card 2 -->
+                <div class="plant-card" data-category="indoor" data-price="32.99" data-care="medium" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g3da2356c73157dbbe225af9f9b41629523d97168984110227ad1f737a13ad9b0e98417f111804a5512b18da91a50ea9285c95dcdda6d65ea3ab993ad28f94811_1280.jpg" alt="Peace Lily" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="btn btn-small gift-btn">
+                                <i class="fas fa-gift"></i>
+                                Send Gift
+                            </button>
+                        </div>
+                        <div class="care-badge medium">Medium Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Peace Lily</h3>
+                        <p>Air purifying beauty with elegant white blooms</p>
+                        <div class="plant-details">
+                            <span class="category">Indoor</span>
+                            <span class="light-requirement">🌤️ Partial Light</span>
+                        </div>
+                        <div class="price">$32.99</div>
+                    </div>
+                </div>
+
+                <!-- Plant Card 3 -->
+                <div class="plant-card" data-category="indoor" data-price="45.99" data-care="medium" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/gefd76322b3943d8411b0b41c270f4dee89a4861574559c7fb4ed1fc78edebad4a1faecf655c487f5f593399787464e7d095b34c3d4420cd0b20aa9968c48b67f_1280.jpg" alt="Fiddle Leaf Fig" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="btn btn-small gift-btn">
+                                <i class="fas fa-gift"></i>
+                                Send Gift
+                            </button>
+                        </div>
+                        <div class="care-badge medium">Medium Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fiddle Leaf Fig</h3>
+                        <p>Statement plant that transforms any space</p>
+                        <div class="plant-details">
+                            <span class="category">Indoor</span>
+                            <span class="light-requirement">☀️ Bright Light</span>
+                        </div>
+                        <div class="price">$45.99</div>
+                    </div>
+                </div>
+
+                <!-- Plant Card 4 -->
+                <div class="plant-card" data-category="indoor" data-price="28.99" data-care="easy" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g2dfa1a91ba54607fb71ccebf73ca843ebde36f1a47b8452d9f948450f72df8d2d716f56582cfb1833b6feecda2e7ba8f01aeb75cb01a7311697eb7331786ca83_1280.jpg" alt="Snake Plant" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="btn btn-small gift-btn">
+                                <i class="fas fa-gift"></i>
+                                Send Gift
+                            </button>
+                        </div>
+                        <div class="care-badge easy">Easy Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Snake Plant</h3>
+                        <p>Low-maintenance air purifier</p>
+                        <div class="plant-details">
+                            <span class="category">Indoor</span>
+                            <span class="light-requirement">🌙 Low Light</span>
+                        </div>
+                        <div class="price">$28.99</div>
+                    </div>
+                </div>
+
+                <!-- Plant Card 5 -->
+                <div class="plant-card" data-category="flowering" data-price="36.99" data-care="medium" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g8e2a404b0ba620fa0c2c3719f22e3718895488977b38eef10e6b3af3aa81c3e2425c298acfce5b74df2abef94799f6e1539b024c6a8d87bfe2cb1ae0d8be1d11_1280.jpg" alt="Flowering Plant" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="btn btn-small gift-btn">
+                                <i class="fas fa-gift"></i>
+                                Send Gift
+                            </button>
+                        </div>
+                        <div class="care-badge medium">Medium Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Blooming Beauty</h3>
+                        <p>Colorful flowers that brighten any room</p>
+                        <div class="plant-details">
+                            <span class="category">Flowering</span>
+                            <span class="light-requirement">☀️ Bright Light</span>
+                        </div>
+                        <div class="price">$36.99</div>
+                    </div>
+                </div>
+
+                <!-- Plant Card 6 -->
+                <div class="plant-card" data-category="outdoor" data-price="42.99" data-care="easy" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g680b5e915851fcc9414e4421115418d668067278d6665179deca30e694613d5d21fe20e9a9e19ce7c69e25283f2c7cad27d5c009f9a6f37d6da55210d5eed44d_1280.jpg" alt="Garden Plant" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="btn btn-small gift-btn">
+                                <i class="fas fa-gift"></i>
+                                Send Gift
+                            </button>
+                        </div>
+                        <div class="care-badge easy">Easy Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Garden Companion</h3>
+                        <p>Perfect for outdoor spaces and gardens</p>
+                        <div class="plant-details">
+                            <span class="category">Outdoor</span>
+                            <span class="light-requirement">☀️ Full Sun</span>
+                        </div>
+                        <div class="price">$42.99</div>
+                    </div>
+                </div>
+
+                <!-- Plant Card 7 -->
+                <div class="plant-card" data-category="succulents" data-price="19.99" data-care="easy" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g72cd0f8e6c6cd3aec78ae3ed1ca3a792a1e30b51c24995e9d171c14feb6548f1f6c0cc9c0995bc58deffdcf61fa21b2a73e80691e562e19b96429bf59e55d9cb_1280.jpg" alt="Mini Succulent" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="btn btn-small gift-btn">
+                                <i class="fas fa-gift"></i>
+                                Send Gift
+                            </button>
+                        </div>
+                        <div class="care-badge easy">Easy Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mini Succulent</h3>
+                        <p>Tiny plant, big personality</p>
+                        <div class="plant-details">
+                            <span class="category">Succulents</span>
+                            <span class="light-requirement">☀️ Bright Light</span>
+                        </div>
+                        <div class="price">$19.99</div>
+                    </div>
+                </div>
+
+                <!-- Plant Card 8 -->
+                <div class="plant-card" data-category="indoor" data-price="38.99" data-care="expert" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-image">
+                        <img src="https://pixabay.com/get/g733d80c74af3e6c39b160f3e2335a094842be1afaf51dbf29d9db54222d1bca886264978839b55745f1dc797c89f14a6e774e5ce406b25bb9a6144f44f015f8d_1280.jpg" alt="Exotic Plant" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="btn btn-small gift-btn">
+                                <i class="fas fa-gift"></i>
+                                Send Gift
+                            </button>
+                        </div>
+                        <div class="care-badge expert">Expert Care</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Exotic Beauty</h3>
+                        <p>Rare plant for experienced gardeners</p>
+                        <div class="plant-details">
+                            <span class="category">Indoor</span>
+                            <span class="light-requirement">🌤️ Partial Light</span>
+                        </div>
+                        <div class="price">$38.99</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section" data-aos="fade-up">
+                <button class="btn btn-outline" id="load-more">
+                    <i class="fas fa-plus"></i>
+                    Load More Plants
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>PlantGift</span>
+                    </div>
+                    <p>Bringing nature's beauty to your loved ones, one plant at a time.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-plants.html">Browse Plants</a></li>
+                        <li><a href="bulk-order.html">Bulk Orders</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> hello@plantgift.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Green Street, Plant City, PC 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PlantGift. All rights reserved. Made with 💚 for nature lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gift Modal -->
+    <div class="modal" id="gift-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Send as Gift</h2>
+            <form id="gift-form">
+                <div class="form-group">
+                    <label for="recipient-name">Recipient Name:</label>
+                    <input type="text" id="recipient-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="recipient-email">Recipient Email:</label>
+                    <input type="email" id="recipient-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="gift-message">Gift Message:</label>
+                    <textarea id="gift-message" rows="4" placeholder="Write a special message..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-date">Delivery Date:</label>
+                    <input type="date" id="delivery-date" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Gift</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll-effects.js"></script>
+    <script>
+        // Plant filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryFilter = document.getElementById('category-filter');
+            const priceFilter = document.getElementById('price-filter');
+            const careFilter = document.getElementById('care-filter');
+            const resetButton = document.getElementById('reset-filters');
+            const plantCards = document.querySelectorAll('.plant-card');
+            const giftButtons = document.querySelectorAll('.gift-btn');
+            const modal = document.getElementById('gift-modal');
+            const closeModal = document.querySelector('.close');
+
+            // Filter plants
+            function filterPlants() {
+                const categoryValue = categoryFilter.value;
+                const priceValue = priceFilter.value;
+                const careValue = careFilter.value;
+
+                plantCards.forEach(card => {
+                    let show = true;
+
+                    // Category filter
+                    if (categoryValue !== 'all' && !card.dataset.category.includes(categoryValue)) {
+                        show = false;
+                    }
+
+                    // Price filter
+                    if (priceValue !== 'all') {
+                        const price = parseFloat(card.dataset.price);
+                        if (priceValue === 'under-25' && price >= 25) show = false;
+                        if (priceValue === '25-50' && (price < 25 || price > 50)) show = false;
+                        if (priceValue === 'over-50' && price <= 50) show = false;
+                    }
+
+                    // Care filter
+                    if (careValue !== 'all' && card.dataset.care !== careValue) {
+                        show = false;
+                    }
+
+                    card.style.display = show ? 'block' : 'none';
+                });
+            }
+
+            // Event listeners
+            categoryFilter.addEventListener('change', filterPlants);
+            priceFilter.addEventListener('change', filterPlants);
+            careFilter.addEventListener('change', filterPlants);
+
+            resetButton.addEventListener('click', () => {
+                categoryFilter.value = 'all';
+                priceFilter.value = 'all';
+                careFilter.value = 'all';
+                plantCards.forEach(card => card.style.display = 'block');
+            });
+
+            // Gift modal functionality
+            giftButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    modal.style.display = 'block';
+                });
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // Gift form submission
+            document.getElementById('gift-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Gift order submitted successfully!');
+                modal.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

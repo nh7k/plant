@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Order - PlantGift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>PlantGift</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="browse-plants.html" class="nav-link">Browse Plants</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bulk-order.html" class="nav-link active">Bulk Order</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1>Bulk Tree Plantation</h1>
+                <p>Create greener communities and healthier environments with our bulk plantation services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="bulk-hero">
+        <div class="container">
+            <div class="bulk-hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <h2>Transform Your Community</h2>
+                    <p>Partner with us to bring nature's beauty to parks, societies, schools, and corporate spaces. Our bulk plantation services help create sustainable, green environments that benefit everyone.</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> Professional plantation planning</li>
+                        <li><i class="fas fa-check"></i> Native and adaptive plant species</li>
+                        <li><i class="fas fa-check"></i> Ongoing maintenance support</li>
+                        <li><i class="fas fa-check"></i> Environmental impact assessment</li>
+                    </ul>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <img src="https://pixabay.com/get/gfef91118cce5b99e48046ade4e617abca43a06e4777bffb25644cf39b7eeeadb86122e3f52bc2d96800d713d6965ae69803585c2743c3e39fdb884aff1cdb230_1280.jpg" alt="Tree Plantation" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bulk-services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Plantation Services</h2>
+                <p>Comprehensive solutions for all your bulk plantation needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Spaces</h3>
+                    <p>Transform office complexes and corporate campuses with strategic green installations that boost employee wellbeing.</p>
+                    <ul>
+                        <li>Indoor plant installations</li>
+                        <li>Rooftop gardens</li>
+                        <li>Outdoor landscaping</li>
+                        <li>Maintenance packages</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Societies</h3>
+                    <p>Create beautiful, sustainable living spaces that enhance property values and community wellbeing.</p>
+                    <ul>
+                        <li>Common area landscaping</li>
+                        <li>Garden design & setup</li>
+                        <li>Balcony garden solutions</li>
+                        <li>Community garden projects</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>Educational Institutions</h3>
+                    <p>Foster environmental awareness and create inspiring learning environments through strategic plantations.</p>
+                    <ul>
+                        <li>Campus landscaping</li>
+                        <li>Educational gardens</li>
+                        <li>Tree plantation drives</li>
+                        <li>Student engagement programs</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Public Parks</h3>
+                    <p>Enhance public spaces with thoughtful plantation that benefits the entire community and local ecosystem.</p>
+                    <ul>
+                        <li>Park development</li>
+                        <li>Trail landscaping</li>
+                        <li>Wildlife habitat creation</li>
+                        <li>Environmental restoration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="bulk-order-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header" data-aos="fade-up">
+                    <h2>Request a Bulk Order Quote</h2>
+                    <p>Fill out the form below and our experts will get back to you with a customized proposal</p>
+                </div>
+                <div class="form-content">
+                    <div class="form-illustration" data-aos="fade-right">
+                        <div class="animated-tree">
+                            <div class="tree-trunk"></div>
+                            <div class="tree-leaves">
+                                <div class="leaf-1"></div>
+                                <div class="leaf-2"></div>
+                                <div class="leaf-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="bulk-form" id="bulk-order-form" data-aos="fade-left">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">
+                                    <i class="fas fa-user"></i>
+                                    Contact Person
+                                </label>
+                                <input type="text" id="contact-name" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">
+                                    <i class="fas fa-building"></i>
+                                    Organization
+                                </label>
+                                <input type="text" id="organization" name="organization" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email Address
+                                </label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i>
+                                    Phone Number
+                                </label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-type">
+                                <i class="fas fa-list"></i>
+                                Project Type
+                            </label>
+                            <select id="project-type" name="projectType" required>
+                                <option value="">Select project type</option>
+                                <option value="corporate">Corporate Space</option>
+                                <option value="residential">Residential Society</option>
+                                <option value="educational">Educational Institution</option>
+                                <option value="public">Public Park</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantity">
+                                    <i class="fas fa-seedling"></i>
+                                    Estimated Quantity
+                                </label>
+                                <select id="quantity" name="quantity" required>
+                                    <option value="">Select quantity range</option>
+                                    <option value="50-100">50-100 plants</option>
+                                    <option value="100-500">100-500 plants</option>
+                                    <option value="500-1000">500-1000 plants</option>
+                                    <option value="1000+">1000+ plants</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">
+                                    <i class="fas fa-calendar"></i>
+                                    Project Timeline
+                                </label>
+                                <select id="timeline" name="timeline" required>
+                                    <option value="">Select timeline</option>
+                                    <option value="immediate">Immediate (Within 1 month)</option>
+                                    <option value="short">Short term (1-3 months)</option>
+                                    <option value="medium">Medium term (3-6 months)</option>
+                                    <option value="long">Long term (6+ months)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Project Location
+                            </label>
+                            <input type="text" id="location" name="location" placeholder="City, State, Country" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="area-size">
+                                <i class="fas fa-ruler"></i>
+                                Area Size (sq ft)
+                            </label>
+                            <input type="number" id="area-size" name="areaSize" placeholder="Approximate area in square feet">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requirements">
+                                <i class="fas fa-comment"></i>
+                                Specific Requirements
+                            </label>
+                            <textarea id="requirements" name="requirements" rows="4" placeholder="Tell us about your specific needs, preferred plant types, budget considerations, or any other requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="maintenance" name="maintenance">
+                                <span class="checkmark"></span>
+                                I'm interested in ongoing maintenance services
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consultation" name="consultation">
+                                <span class="checkmark"></span>
+                                I would like a free site consultation
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Process</h2>
+                <p>From consultation to completion, we ensure a smooth and successful plantation project</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Consultation</h3>
+                        <p>We assess your space, understand your needs, and provide expert recommendations.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Planning</h3>
+                        <p>Our team creates a detailed plantation plan tailored to your specific requirements.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Implementation</h3>
+                        <p>Professional installation with quality plants and proper placement for optimal growth.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Maintenance</h3>
+                        <p>Ongoing support and care to ensure your plants thrive and your investment grows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Clients Say</h2>
+                <p>Success stories from our bulk plantation projects</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <p>"PlantGift transformed our corporate campus into a green paradise. Employee satisfaction has increased significantly, and the air quality has improved noticeably."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>HR Director, TechCorp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <p>"The community garden project exceeded our expectations. Residents love the new green spaces, and property values have increased."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Society Manager, Green Valley</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <p>"Our school's eco-garden has become a living classroom. Students are more engaged with environmental learning than ever before."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Dr. Emily Rodriguez</h4>
+                            <span>Principal, Greenwood School</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>PlantGift</span>
+                    </div>
+                    <p>Bringing nature's beauty to your loved ones, one plant at a time.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-plants.html">Browse Plants</a></li>
+                        <li><a href="bulk-order.html">Bulk Orders</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> hello@plantgift.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Green Street, Plant City, PC 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PlantGift. All rights reserved. Made with 💚 for nature lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/scroll-effects.js"></script>
+</body>
+</html>
