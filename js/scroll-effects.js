@@ -642,9 +642,9 @@ html {
 `;
 
 // Inject scroll effects CSS
-const styleSheet = document.createElement('style');
-styleSheet.textContent = scrollEffectsCSS;
-document.head.appendChild(styleSheet);
+const scrollEffectsStyleSheet = document.createElement('style');
+scrollEffectsStyleSheet.textContent = scrollEffectsCSS;
+document.head.appendChild(scrollEffectsStyleSheet);
 
 // Initialize scroll effects when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {

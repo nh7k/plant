@@ -633,9 +633,9 @@ const customAnimationsCSS = `
 `;
 
 // Inject custom animations CSS
-const styleSheet = document.createElement('style');
-styleSheet.textContent = customAnimationsCSS;
-document.head.appendChild(styleSheet);
+const animationsStyleSheet = document.createElement('style');
+animationsStyleSheet.textContent = customAnimationsCSS;
+document.head.appendChild(animationsStyleSheet);
 
 // Initialize animations when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
