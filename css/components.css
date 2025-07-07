@@ -40,7 +40,7 @@
 }
 
 .btn-outline {
-    background: transparent;
+    background: rgb(66, 111, 111);
     color: #ffffff;
     border-color: var(--color-primary);
 }
@@ -715,4 +715,16 @@
 .plant-stem-leaves-glow:hover {
     box-shadow: 0 0 24px 8px #4caf50, 0 0 8px 2px #81c784;
     border: 2px solid #4caf50;
+}
+
+
+.filter-controls{
+    display: flex;
+    margin: var(--space-4) 0;
+    
+}
+.filter-controls {
+    display: flex;
+    margin: var(--space-4) 0;
+    justify-content: space-between;
 }
